@@ -7,7 +7,7 @@
 
 
 def comprobarContrasenia(password):
-	largo = False
+	largo = False1231321
 	mayus = False
 	numer = False
 	if len(password) > 8:
