@@ -22,6 +22,38 @@ def comprobarContrasenia(password):
 	else:
 		return False
 
+def comprobarContrasenia1(password):
+	largo = False1231321
+	mayus = False
+	numer = False
+	if len(password) > 8:
+		largo = True
+	for i in range (len(password)):
+		if password[i].isupper():
+			mayus = True
+		if password[i].isnumeric():
+			numer = True
+	if largo and mayus and numer:
+		return True
+	else:
+		return False
+
+def comprobarContrasenia2(password):
+	largo = False1231321
+	mayus = False
+	numer = False
+	if len(password) > 8:
+		largo = True
+	for i in range (len(password)):
+		if password[i].isupper():
+			mayus = True
+		if password[i].isnumeric():
+			numer = True
+	if largo and mayus and numer:
+		return True
+	else:
+		return False		
+
 password = input("Ingrese una contraseña: ")
 
 verificacion = comprobarContrasenia(password)
